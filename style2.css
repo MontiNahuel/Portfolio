@@ -1,23 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Gloock);
+
 .main {
     background-color: rgba(21, 19, 19, 0.929);
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    margin-top: 2rem;
+.img1 {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 4rem;
+    padding: 2rem;
+}
+
+header {
+    padding: 17rem;
+    background: url(files/videoplayback_Trim.gif);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity:.7;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .titulo {
-    color: cyan;
-    font-size: 6rem;
+    color: rgb(199, 199, 199);
+    font-size: 5rem;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    font-family: Poppins,sans-serif;
+    line-height: 1;
+    position: relative;
 }
 
 .subtitulo {
-    color: aqua;
-    font-size: 3rem;
+    color: rgb(133, 133, 133);
+    animation: fadeInDown;
+    animation-duration: 3s;
+    position: relative;
+}
+
+#sobreMi {
+    color: azure;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: rgb(45, 45, 45);
+    border-radius: 1rem;
+    padding: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: justify;
+    box-shadow: .5em .5em 1em -.5em rgb(27, 27, 27), -.5em -.5em 1em -.5em rgb(28, 28, 28);
+    font-family: sans-serif;
+}
+
+.titleSobreMi {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.textoSobreMi {
+    align-items: center;
+    padding: 2rem;
+    text-align: left;
+}
+
+.containerEstudios {
+    color: azure;
+    align-items: center;
+    text-align: center;
+}
+
+.titleEstudios {
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+.estudios {
+    background-color: rgb(45, 45, 45);
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.descripcion {
+    margin-left: 2rem;
+}
+
+.descripcion small {
+    color: hsla(0,0%,100%,.6);
+}
+
+.titleHabilidades {
+    color: azure;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.colHabilidades {
+    text-align: center;
+}
+
+.cuadroHabilidades {
+    color: azure;
+    background-color: rgb(47, 47, 47);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.cuadroHabilidades h4 {
+    margin-bottom: 4rem;
+}
+
+.skillDetail {
+    text-align: left;
+    margin-left: 4rem;
+    font-size: 1.10em;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.skillDetail small {
+    color: hsla(0,0%,100%,.6);
 }
 
 #button {
-    color: aqua;
+    align-items: center;
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     background-color: rgb(141, 141, 141);
     transition: .6s ease;
@@ -25,6 +153,8 @@
     background: rgb(82, 82, 82);
     position: relative;
     overflow: hidden;
+    margin: 2rem;
+    padding: .75rem;
 }
 
 #button span {
@@ -39,7 +169,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.302);
     position: absolute;
-    top: -50px;
+    top: -75px;
     left: 0;
     transition: .6s ease-in-out all;
 }
@@ -52,3 +182,25 @@
     background: rgb(82, 82, 82);
 }
 
+.githubButton {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.CVButton {
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.linkedinButton {
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    line-height: 1.7;
+}

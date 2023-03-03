@@ -10,28 +10,171 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Portfolio/css/style2.css">
-
+    <link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="main">
+
   <header>
     <!-- place navbar here -->
+    <div class="head">
+      <h5 class="subtitulo">Hola, soy</h5>
+      <br>
+      <h1 class="titulo">Nahuel Monti</h1> 
+      <br>
+      <h5 class="subtitulo">Desarrollador back-end</h5>
+      <br>
+      <a class="githubButton btn btn-primary btn-sm" href="https://github.com/MontiNahuel" role="button" id="button">GitHub</a>
+      <a class="CVButton btn btn-primary btn-sm" href="" role="button" id="button">Descargar CV</a>
+      <a class="linkedinButton btn btn-primary btn-sm" href="" role="button" id="button">Linkedin</a>
+    </div>
   </header>
-  <main class="">
-    <div class="container">
-        <br>
-        <h1 class="titulo">Portfolio titulo 1</h1> 
-        <br>
-        <h2 class="subtitulo">Subtitulo portfolio 2</h2>
-        <br>
-        <a class="btn btn-primary btn-sm " href="#" role="button" id="button">Boton 1</a>
+
+  <main>
+    <div data-aos="fade-down" id="sobreMi">
+      <div class="row">
+        <div class="titleSobreMi"> <strong><u> Sobre Mi </u></strong> </div>
+        <div class="col-4">
+          <div class="fotoPersonal"> <img class="img1" src="files/fotoCVPrueba.png" alt="" width="155px"> </div>
+        </div>
+        <div class="columDatos col-md">
+          <div class="textoSobreMi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quod atque cum quo, deserunt alias neque nisi at. Asperiores exercitationem libero excepturi debitis animi laudantium saepe ea quibusdam accusamus quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima ullam maxime, deleniti voluptatum vitae, laborum vero ipsa a nobis aspernatur officia, earum est totam possimus autem. Numquam, quam repudiandae?</div> 
+          <a class="btn btn-primary btn-sm" href="" role="button" id="button"> Conoceme </a>
+        </div>
+      </div>
     </div>
 
+    <div class="containerEstudios container !direction !spacing">
+      <div data-aos="fade" class="titleEstudios"><strong><u>Estudios</u></strong></div>
+      <div data-aos="fade-up" class="estudios" id="UADE">
+        <div class="logo"> <img class="imgUADE" src="files/UadeLogo.png" alt="" width="155px"> </div>
+        <div class="descripcion" id="UADE"> 
+          <h4><strong>Universidad Argentina De La Empresa</strong></h4>
+          <small>2021 - Present</small>
+          <h5>Ingenieria En Informatica</h5>
+          <small>En suspensión</small>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="estudios" id="UADE">
+        <div class="logo"> <img class="imgUADE" src="files/UadeLogo.png" alt="" width="155px"> </div>
+        <div class="descripcion" id="UADE"> 
+          <h4><strong>Universidad Argentina De La Empresa</strong></h4>
+          <small>2023 - Present</small>
+          <h5>Tecnicatura Universitaria en Desarrollo de Software</h5>
+          <small>Activo</small>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="estudios" id="codoACodo">
+        <div class="logo"> <img class="imgUADE" src="files/codoacodoLogo.png" alt="" width="155px"> </div>
+        <div class="descripcion" id="UADE"> 
+          <h4><strong>Codo A Codo 4.0</strong></h4>
+          <small>Marzo 2023 - Jun 2023</small>
+          <h5>Curso Desarrollador Full Stack Python</h5>
+          <small>Activo</small>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="estudios" id="codoACodo">
+        <div class="logo"> <img class="imgcodoACodo" src="files/codoacodoLogo.png" alt="" width="155px"> </div>
+        <div class="descripcion" id="codoACodo"> 
+          <h4><strong>Codo A Codo 4.0</strong></h4>
+          <small>Jul 2022 - Dic 2022</small>
+          <h5>Curso Desarrollador Full Stack Java</h5> <p>Cuenta con el aprendizaje de las siguientes tecnologías: HTML, CSS, Bootstrap, Javascript, SQL, MySQL, Java, Spring</p>
+          <small>Finalizado</small>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="estudios" id="santaCatalina">
+        <div class="logo"> <img class="imgSantaCata" src="files/santaCataLogo.png" alt="" width="155px"> </div>
+        <div class="descripcion" id="SantaCatalina"> 
+          <h4><strong>Insituto Santa Catalina De Alejandria</strong></h4>
+          <small>Mar 2016 - Dic 2020</small>
+          <p>Secundario con Titularidad en Bachicher Orientado a Comunicación Social</p>
+          <small>Finalizado</small>
+        </div>
+      </div>
+    </div>
+    <div class="titleHabilidades"><strong><u>Habilidades Que Poseo</u></strong></div>
+    <div class="containerHabilidades container">
+      <div class="colHabilidades row">
+        <div class="cuadroHabilidades col-sm" id="FrontEnd"><h4>Front End</h4>
+          <div class="skillDetail">
+            <strong>HTML</strong> <small>Intermedio</small>
+          </div>
+          <div class="skillDetail">
+            <strong>CSS</strong> <small>Intermedio</small>
+          </div>
+          <div class="skillDetail">
+            <strong>JavaScript</strong> <small>Intermedio</small>
+          </div>
+          <div class="skillDetail">
+            <strong>Bootstrap</strong> <small>Basico</small>
+          </div>
+        </div>
+        <div class="cuadroHabilidades col-sm" id="BackEnd"><h4>Back End</h4>
+          <div class="skillDetail">
+            <strong>Java</strong> <small>Intermedio</small>
+          </div>
+          <div class="skillDetail">
+            <strong>Python</strong> <small>Avanzado</small>
+          </div>
+          <div class="skillDetail">
+            <strong>SQL</strong> <small>Basico</small>
+          </div>
+          <div class="skillDetail">
+            <strong>MySQL</strong> <small>Basico</small>
+          </div>
+          <div class="skillDetail">
+            <strong>Spring</strong> <small>Basico</small>
+          </div>
+          <div class="skillDetail">
+            <strong>Django</strong> <small>Basico</small>
+          </div>
+        </div>
+      </div>
+      <div class="colHabilidades row">
+        <div class="cuadroHabilidades col-sm" id="BackEnd"><h4>Habilidades Extra</h4>
+          <div class="skillDetail">
+            <strong>Git</strong> <small>Intermedio</small>
+          </div>
+        </div>
+        <div class="cuadroHabilidades col-sm" id="BackEnd"><h4>Habilidades Blandas</h4>
+          <div class="skillDetail">
+            <strong>Creativo</strong>
+          </div>
+          <div class="skillDetail">
+            <strong>Autodidacta</strong>
+          </div>
+          <div class="skillDetail">
+            <strong>Teamworker</strong>
+          </div>
+          <div class="skillDetail">
+            <strong>Organizado</strong>
+          </div>
+          <div class="skillDetail">
+            <strong>Responsable</strong>
+          </div>
+          <div class="skillDetail">
+            <strong>Aprendizaje Rapido</strong>
+          </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
   </main>
+
   <footer>
     <!-- place footer here -->
   </footer>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -39,6 +182,13 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+    
   </script>
 </body>
 
